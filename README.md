@@ -13,7 +13,7 @@ A simple bookmarklet to clean up your LinkedIn feed - no extensions, no download
 
 ## Installation
 
-Visit https://yourusername.github.io/linkedin-declutter/ and drag the bookmarklet to your bookmarks bar!
+Visit (https://nxob.github.io/linkedin-declutter/) and drag the bookmarklet to your bookmarks bar!
 
 ## Usage
 
