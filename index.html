@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Feed Declutter - One Click Clean Feed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 60px 0;
+            text-align: center;
+            color: white;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            opacity: 0.95;
+            margin-bottom: 40px;
+        }
+
+        .bookmarklet-box {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .bookmarklet-box h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .bookmarklet-box p {
+            color: #4a5568;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+        }
+
+        .bookmarklet-link {
+            display: inline-block;
+            padding: 20px 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .bookmarklet-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
+        }
+
+        .instruction-highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .instruction-highlight strong {
+            color: #856404;
+            font-size: 1.1rem;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px 20px 0 0;
+            margin-top: -20px;
+            position: relative;
+            z-index: 1;
+            padding: 60px 0;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .feature h3 {
+            color: #2d3748;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #4a5568;
+        }
+
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🧹 LinkedIn Feed Declutter</h1>
+            <p class="subtitle">Clean up your LinkedIn feed with one click!</p>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">1</div>
+                    <div class="stat-label">Click Setup</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">0</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Free</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <div class="bookmarklet-box">
+                <h2>📌 Drag This to Your Bookmarks Bar</h2>
+                <p>Simply drag the button below to your bookmarks bar, then click it on LinkedIn!</p>
+                
+                <div style="text-align: center; margin: 40px 0;">
+                    <a href="javascript:(function(){var s=document.createElement('script');s.src='https://yourusername.github.io/linkedin-declutter/declutter.js?'+Date.now();document.body.appendChild(s);})();" class="bookmarklet-link">
+                        🧹 Clean LinkedIn
+                    </a>
+                </div>
+
+                <div class="instruction-highlight">
+                    <strong>💡 Can't see bookmarks bar?</strong> Press <strong>Ctrl+Shift+B</strong> (Windows/Linux) or <strong>Cmd+Shift+B</strong> (Mac)
+                </div>
+            </div>
+
+            <div class="container">
+                <h2 style="text-align: center; margin: 40px 0; font-size: 2rem; color: #2d3748;">What Gets Cleaned?</h2>
+                <div class="features">
+                    <div class="feature">
+                        <div class="feature-icon">🚫</div>
+                        <h3>Promoted Posts</h3>
+                        <p>No more ads!</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Suggestions</h3>
+                        <p>Hide unwanted recommendations</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎉</div>
+                        <h3>Celebrations</h3>
+                        <p>Filter work anniversaries</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">📊</div>
+                        <h3>Polls</h3>
+                        <p>No more voting prompts</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">💬</div>
+                        <h3>Comments</h3>
+                        <p>Collapsed by default</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔇</div>
+                        <h3>Custom Muting</h3>
+                        <p>Add your own keywords</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ for a cleaner LinkedIn</p>
+            <p style="margin-top: 20px;">
+                <a href="https://github.com/yourusername/linkedin-declutter">GitHub</a> • 
+                <a href="https://github.com/yourusername/linkedin-declutter/issues">Issues</a>
+            </p>
+            <p style="margin-top: 20px; opacity: 0.7; font-size: 0.9rem;">
+                Free • Open Source • Privacy Focused
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
